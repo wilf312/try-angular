@@ -1,19 +1,15 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
-import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
-import { HerosComponent } from './heros.component';
+import { HeroDetailComponent } from './hero-detail.component';
 
-describe('HerosComponent', () => {
-  let component: HerosComponent;
-  let fixture: ComponentFixture<HerosComponent>;
+describe('HeroDetailComponent', () => {
+  let component: HeroDetailComponent;
+  let fixture: ComponentFixture<HeroDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      schemas: [
-        CUSTOM_ELEMENTS_SCHEMA
-      ],
-      declarations: [ HerosComponent ],
+      declarations: [ HeroDetailComponent ],
       imports: [
         FormsModule
       ]
@@ -22,7 +18,7 @@ describe('HerosComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HerosComponent);
+    fixture = TestBed.createComponent(HeroDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
