@@ -1,5 +1,8 @@
 # try-angular
 
+nodejs 10.3.0
+angular cli 6.0.7
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
 
 ## Development server
