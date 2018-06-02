@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { HerosComponent } from './heros.component';
 
@@ -8,7 +9,10 @@ describe('HerosComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HerosComponent ]
+      declarations: [ HerosComponent ],
+      imports: [
+        FormsModule
+      ]
     })
     .compileComponents();
   }));
