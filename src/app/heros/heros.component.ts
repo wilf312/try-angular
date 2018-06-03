@@ -12,7 +12,6 @@ import {HEROES} from '../mock-heroes';
 })
 export class HerosComponent implements OnInit {
   heroes: Hero[];
-  selectedHero: Hero;
 
   constructor(private heroService: HeroService) {
   }
@@ -24,9 +23,5 @@ export class HerosComponent implements OnInit {
 
   ngOnInit() {
     this.getHeroes();
-  }
-
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
   }
 }

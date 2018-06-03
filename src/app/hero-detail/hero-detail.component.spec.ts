@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
+import {RouterTestingModule} from '@angular/router/testing';
 
 import { HeroDetailComponent } from './hero-detail.component';
 
@@ -11,7 +12,8 @@ describe('HeroDetailComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ HeroDetailComponent ],
       imports: [
-        FormsModule
+        FormsModule,
+        RouterTestingModule
       ]
     })
     .compileComponents();
